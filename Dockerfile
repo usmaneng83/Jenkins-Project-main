@@ -1,4 +1,3 @@
-# Use official Python 3.9 base image
 FROM python:3.9
 
 # Set working directory inside the container
@@ -12,6 +11,3 @@ RUN pip install --no-cache-dir -r requirements.txt || true
 
 # Expose port 8000 (for Flask/Django or similar)
 EXPOSE 8000
-
-# Default command to run your Python app
-CMD ["python", "app.py"]
